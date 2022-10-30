@@ -1,3 +1,5 @@
+package pro.sky.java.course1.lesson1;
+
 import java.util.Scanner;
 
 public class Library {
@@ -6,7 +8,7 @@ public class Library {
     static int arrSize;
 
     public Library(int arrSize) {
-        this.arrSize = arrSize;
+        Library.arrSize = arrSize;
     }
 
 
@@ -42,8 +44,7 @@ public class Library {
         for (int i = 0; i < arrSize; i++) {
             if(title.equals(books[i].getTitle())){
                 System.out.println(books[i].getTitle() + " was published in " + books[i].getYear());
-            }
-            else{
+            } else{
                 System.out.println("The book was not founded.");
             }
             return;
@@ -55,8 +56,7 @@ public class Library {
             if(title.equals(books[i].getTitle())){
                 books[i].setYear(year);
                 System.out.println("The year of book: " + books[i].getTitle() + " has been changed to  " + books[i].getYear());
-            }
-            else{
+            } else{
                 System.out.println("The book was not founded.");
             }
             return;

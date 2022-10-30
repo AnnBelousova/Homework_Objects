@@ -1,7 +1,9 @@
+package pro.sky.java.course1.lesson1;
+
 public class Author {
 
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
     public String getFirstName() {
         return firstName;
