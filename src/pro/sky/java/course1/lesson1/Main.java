@@ -8,12 +8,12 @@ public class Main {
         Book[] books = new Book[5];
         Scanner scanner = new Scanner(System.in);
         int choice;
-        Book book1 = new Book(new Author("Andrey", "Lykov"), "Fiction pro.sky.java.course1.lesson1.Book", 2015);
-        Book book2 = new Book(new Author("Kirill", "Ezhov"), "Fantastic pro.sky.java.course1.lesson1.Book", 1999);
+        Book book1 = new Book(new Author("Andrey", "Lykov"), "Fiction Book", 2015);
+        Book book2 = new Book(new Author("Kirill", "Ezhov"), "Fantastic Book", 1999);
         books[0] = book1;
         books[1] = book2;
         book2.setYear(2000);
-        String title = "Fiction pro.sky.java.course1.lesson1.Book";
+        String title = "Fiction Book";
         int year = 2020;
 
         Library library = new Library(books.length);

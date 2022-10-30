@@ -3,6 +3,7 @@ package pro.sky.java.course1.lesson1;
 import java.util.Scanner;
 
 public class Library {
+
     private static Book[] books;
     static Scanner scanner = new Scanner(System.in);
     static int arrSize;
@@ -34,7 +35,8 @@ public class Library {
             if (books[i] == null) {
                 books[i] = new Book(new Author("", ""), "", 0);
             } else {
-                System.out.printf("\n%s: %s: %s", books[i].getAuthor().toString(), books[i].getTitle(), books[i].getYear());
+                //System.out.printf("\n%s: %s: %s", books[i].getAuthor().toString(), books[i].getTitle(), books[i].getYear());
+                System.out.println(books[i].toString());
             }
         }
         System.out.println();
